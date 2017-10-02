@@ -1,0 +1,10 @@
+version: "3.3"
+
+services:
+  build:
+    build:
+      context: .
+    volumes:
+      - ./src:/src:ro
+      - ./src/build:/build:rw
+    network_mode: "none"
